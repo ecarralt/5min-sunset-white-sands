@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: ['White Sands sunset', 'White Sands National Park video', 'New Mexico sunset', 'relaxing nature video', 'five minute meditation'],
   alternates: { canonical: '/' },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, 'max-video-preview': -1, 'max-image-preview': 'large' } },
-  openGraph: { type: 'video.other', url: '/', siteName: '5 Minutes at White Sands', title: '5 Minutes at White Sands', description: 'A quiet sunset in White Sands, New Mexico.', images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Sunset over the dunes at White Sands' }], videos: [{ url: '/white-sands-sunset.mp4', type: 'video/mp4' }] },
+  openGraph: { type: 'video.other', url: '/', siteName: '5 Minutes at White Sands', title: '5 Minutes at White Sands', description: 'A quiet sunset in White Sands, New Mexico.', images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Sunset over the dunes at White Sands' }], videos: [{ url: 'https://raw.githubusercontent.com/ecarralt/5min-sunset-white-sands/3857f94c8acc0583946571837417f3e4ca6e0033/public/white-sands-sunset.mp4', type: 'video/mp4' }] },
   twitter: { card: 'summary_large_image', title: '5 Minutes at White Sands', description: 'A quiet sunset in White Sands, New Mexico.', images: ['/og.png'] },
 };
 

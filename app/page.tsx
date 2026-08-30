@@ -1,11 +1,13 @@
 const siteUrl = 'https://5minsunsetinwhitesands.xyz';
+const videoUrl =
+  'https://raw.githubusercontent.com/ecarralt/5min-sunset-white-sands/3857f94c8acc0583946571837417f3e4ca6e0033/public/white-sands-sunset.mp4';
 
 export default function Home() {
   const videoSchema = {
     '@context': 'https://schema.org', '@type': 'VideoObject',
     name: '5 Minutes at White Sands',
     description: 'A five-minute sunset filmed among the white gypsum dunes of White Sands, New Mexico.',
-    thumbnailUrl: `${siteUrl}/og.png`, contentUrl: `${siteUrl}/white-sands-sunset.mp4`,
+    thumbnailUrl: `${siteUrl}/og.png`, contentUrl: videoUrl,
     duration: 'PT5M4S', inLanguage: 'en', isFamilyFriendly: true,
   };
 
@@ -26,9 +28,9 @@ export default function Home() {
       <section className="film-wrap" id="film" aria-label="Sunset film">
         <div className="film-frame">
           <video controls playsInline preload="metadata" poster="/og.png" aria-label="A five-minute sunset at White Sands, New Mexico">
-            <source src="/white-sands-sunset.mp4" type="video/mp4" />
+            <source src={videoUrl} type="video/mp4" />
             <track kind="captions" src="/sunset-captions.vtt" srcLang="en" label="English" default />
-            Your browser does not support HTML video. You can <a href="/white-sands-sunset.mp4">download the film</a> instead.
+            Your browser does not support HTML video. You can <a href={videoUrl}>download the film</a> instead.
           </video>
         </div>
         <div className="film-meta" aria-label="Film details"><span>05:04</span><span>Sunset study</span><span>Sound on</span></div>
