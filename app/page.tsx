@@ -6,7 +6,7 @@ export default function Home() {
     name: '5 Minutes at White Sands',
     description: 'A five-minute sunset filmed among the white gypsum dunes of White Sands, New Mexico.',
     thumbnailUrl: `${siteUrl}/og.png`, contentUrl: `${siteUrl}/white-sands-sunset.mp4`,
-    duration: 'PT5M', inLanguage: 'en', isFamilyFriendly: true,
+    duration: 'PT5M4S', inLanguage: 'en', isFamilyFriendly: true,
   };
 
   return (
@@ -31,7 +31,7 @@ export default function Home() {
             Your browser does not support HTML video. You can <a href="/white-sands-sunset.mp4">download the film</a> instead.
           </video>
         </div>
-        <div className="film-meta" aria-label="Film details"><span>05:00</span><span>Sunset study</span><span>Sound on</span></div>
+        <div className="film-meta" aria-label="Film details"><span>05:04</span><span>Sunset study</span><span>Sound on</span></div>
       </section>
       <section className="about" id="about" aria-labelledby="about-title">
         <div><p className="section-number">01 / About</p><h2 id="about-title">A small window<br />into the evening.</h2></div>
