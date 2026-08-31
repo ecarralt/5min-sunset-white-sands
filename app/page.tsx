@@ -1,4 +1,4 @@
-const siteUrl = 'https://5minsunsetinwhitesands.xyz';
+const siteUrl = 'https://5minsunsetinwhitesands.world';
 const videoUrl =
   'https://raw.githubusercontent.com/ecarralt/5min-sunset-white-sands/3857f94c8acc0583946571837417f3e4ca6e0033/public/white-sands-sunset.mp4';
 

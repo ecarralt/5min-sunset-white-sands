@@ -6,7 +6,7 @@ const geist = Geist({ variable: '--font-sans', subsets: ['latin'] });
 const instrument = Instrument_Serif({ variable: '--font-display', subsets: ['latin'], weight: '400' });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://5minsunsetinwhitesands.xyz'),
+  metadataBase: new URL('https://5minsunsetinwhitesands.world'),
   title: '5 Minutes at White Sands | A Sunset Film',
   description: 'Pause for a five-minute sunset across the white gypsum dunes of White Sands, New Mexico. A quiet, cinematic moment from the desert.',
   keywords: ['White Sands sunset', 'White Sands National Park video', 'New Mexico sunset', 'relaxing nature video', 'five minute meditation'],
