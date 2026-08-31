@@ -1,3 +1,5 @@
+import { TrackedVideo } from '@/components/tracked-video';
+
 const siteUrl = 'https://5minsunsetinwhitesands.world';
 const videoUrl =
   'https://raw.githubusercontent.com/ecarralt/5min-sunset-white-sands/3857f94c8acc0583946571837417f3e4ca6e0033/public/white-sands-sunset.mp4';
@@ -49,11 +51,7 @@ export default function Home() {
       </section>
       <section className="film-wrap" id="film" aria-label="Sunset film">
         <div className="film-frame">
-          <video controls playsInline preload="metadata" poster="/og.png" aria-label="A five-minute sunset at White Sands, New Mexico">
-            <source src={videoUrl} type="video/mp4" />
-            <track kind="captions" src="/sunset-captions.vtt" srcLang="en" label="English" default />
-            Your browser does not support HTML video. You can <a href={videoUrl}>download the film</a> instead.
-          </video>
+          <TrackedVideo videoUrl={videoUrl} />
         </div>
         <div className="film-meta" aria-label="Film details"><span>05:04</span><span>Sunset study</span><span>Sound on</span></div>
       </section>
