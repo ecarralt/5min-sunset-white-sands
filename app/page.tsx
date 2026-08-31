@@ -1,14 +1,36 @@
 const siteUrl = 'https://5minsunsetinwhitesands.world';
 const videoUrl =
   'https://raw.githubusercontent.com/ecarralt/5min-sunset-white-sands/3857f94c8acc0583946571837417f3e4ca6e0033/public/white-sands-sunset.mp4';
+const videoPublishedDate = '2026-08-30';
 
 export default function Home() {
   const videoSchema = {
     '@context': 'https://schema.org', '@type': 'VideoObject',
     name: '5 Minutes at White Sands',
     description: 'A five-minute sunset filmed among the white gypsum dunes of White Sands, New Mexico.',
-    thumbnailUrl: `${siteUrl}/og.png`, contentUrl: videoUrl,
-    duration: 'PT5M4S', inLanguage: 'en', isFamilyFriendly: true,
+    thumbnailUrl: [`${siteUrl}/og.png`],
+    uploadDate: videoPublishedDate,
+    contentUrl: videoUrl,
+    embedUrl: `${siteUrl}/#film`,
+    duration: 'PT5M4S',
+    inLanguage: 'en-US',
+    isFamilyFriendly: true,
+    keywords: [
+      'White Sands sunset',
+      'White Sands National Park',
+      'New Mexico sunset',
+      'relaxing nature video',
+      'five minute meditation',
+    ],
+    about: {
+      '@type': 'Place',
+      name: 'White Sands National Park',
+      address: {
+        '@type': 'PostalAddress',
+        addressRegion: 'New Mexico',
+        addressCountry: 'US',
+      },
+    },
   };
 
   return (
